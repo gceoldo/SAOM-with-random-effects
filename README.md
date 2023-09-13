@@ -13,6 +13,12 @@ scoreTests.R
 modelSelection.R
 gof.R
 
+for plots:
+plotData.R
+plotAlgorithms.R
+
+
+
 
 
 

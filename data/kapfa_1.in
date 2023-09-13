@@ -1,0 +1,25 @@
+@1[general information about SIENA project <kapfa>:]
+1 [number of waves]
+39 [number of actors]
+1 [number of dependent network variables]
+0 [number of dependent actor variables]
+1 [number of files with constant actor covariates]
+0 [number of exogenous changing actor covariates]
+0 [number of constant dyadic covariates]
+0 [number of exogenous changing dyadic covariates]
+0 [indicator for file with composition change directives]
+
+@2[network files in temporal order; names follow:]
+Kapfa1.dat
+1 [code for tie]
+ [code for missing]
+assistance time 1
+
+@4[files with constant actor covariates:]
+kapfat.dat
+2 [number of covariates in this file; names follow:]
+ [code for missing]
+lyashi
+ [code for missing]
+status1
+

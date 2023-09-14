@@ -15,19 +15,19 @@ rm(col_ph2, lwd_ph2)
 
 lwd_line <- 1.5
 plot(0,0,type="n",xlim=c(0,35),ylim=c(0,.22), main="Distribution variance, Phase 3", xlab="simulated variance", ylab="density")
-points(density(apply(ph3.stand$sf2[,,7+(1:39)],1,var)), type="l", col=1, lty=1, lwd = lwd_line)
-points(density(apply(ph3.notrt$sf2[,,6+(1:39)],1,var)), type="l", col=2, lty=1, lwd = lwd_line)
-points(density(apply(ph3.nosts$sf2[,,4+(1:39)],1,var)), type="l", col=3, lty=1, lwd = lwd_line)
+points(density(apply(ph3.stand$sf2[,,8+(1:39)],1,var)), type="l", col=1, lty=1, lwd = lwd_line)
+points(density(apply(ph3.notrt$sf2[,,8+(1:39)],1,var)), type="l", col=2, lty=1, lwd = lwd_line)
+points(density(apply(ph3.nosts$sf2[,,8+(1:39)],1,var)), type="l", col=3, lty=1, lwd = lwd_line)
 #points(density(apply(ph3.fullt$sf2[,,8+(1:39)],1,var)), type="l", col=4, lty=1, lwd = lwd_line) # no convergence
-points(density(apply(p3c.stand$sf2[,,7+(1:39)],1,var)), type="l", col=1, lty=2, lwd = lwd_line)
-points(density(apply(p3c.notrt$sf2[,,6+(1:39)],1,var)), type="l", col=2, lty=2, lwd = lwd_line)
-points(density(apply(p3c.nosts$sf2[,,4+(1:39)],1,var)), type="l", col=3, lty=2, lwd = lwd_line)
+points(density(apply(p3c.stand$sf2[,,8+(1:39)],1,var)), type="l", col=1, lty=2, lwd = lwd_line)
+points(density(apply(p3c.notrt$sf2[,,8+(1:39)],1,var)), type="l", col=2, lty=2, lwd = lwd_line)
+points(density(apply(p3c.nosts$sf2[,,8+(1:39)],1,var)), type="l", col=3, lty=2, lwd = lwd_line)
 points(density(apply(p3c.fullt$sf2[,,8+(1:39)],1,var)), type="l", col=4, lty=2, lwd = lwd_line)
-abline(v=var(ph3.stand$targets2[8:46]),col=8, lwd=2)
+abline(v=var(ph3.stand$targets2[9:47]),col=8, lwd=2)
 
 text(23,.21,"model\nwith\nrandom\nout-deg.", cex=.7)
 text(27,.21,"model\nwithout\nrandom\nout-deg.", cex=.7)
-text(29,.165,pos=4,"standard\nno-transit.\nno-status\nfull-transit.",cex=1)
+text(29,.165,pos=4,"standard\nno-transit.\nno-status\nfull",cex=1)
 left_seg_1 <- 21.5
 left_seg_2 <- 25.5
 length_seg <- 3
